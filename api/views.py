@@ -17,25 +17,21 @@ class VehicleList(generics.ListAPIView):
     queryset = Vehicle.objects.all()
     serializer_class = VehicleSerializer
 
-    
+
     def get_queryset(self):
+        queryset = Vehicle.objects.all()
 
         vehicle_type = self.request.query_params['vehicleType']
         vehicle_class = self.request.query_params['vehicleClass']
         seats = self.request.query_params['seats']
-
-        queryset = Vehicle.objects.all()
-
-        if vehicle_type == 'showAll':
-            queryset = Vehicle.objects.filter(vehicle_type__isnull=vehicle_type)
         
-        # if vehicle_class == 'showAll':
-        #     queryset = Vehicle.objects.exclude(vehicle_class)
+        if vehicle_type != 'showAll':
+            queryset.filter(vehicle_type=vehicle_type)
+        if vehicle_class != 'showAll':
+            queryset.filter(vehicle_class=vehicle_class)
+        if seats != 'showAll':
+            queryset.filter(seats=seats)
 
-        # if seats == 'showAll':
-        #     queryset = Vehicle.objects.exclude(seats)
-
-        
         return distinct(queryset)
 
 
