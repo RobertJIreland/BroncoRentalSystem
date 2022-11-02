@@ -14,7 +14,6 @@ def distinct(queryset):
 
 
 class VehicleList(generics.ListAPIView):
-    queryset = Vehicle.objects.all()
     serializer_class = VehicleSerializer
 
 
@@ -26,11 +25,11 @@ class VehicleList(generics.ListAPIView):
         seats = self.request.query_params['seats']
         
         if vehicle_type != 'showAll':
-            queryset.filter(vehicle_type=vehicle_type)
+            queryset = queryset.filter(vehicle_type=vehicle_type)
         if vehicle_class != 'showAll':
-            queryset.filter(vehicle_class=vehicle_class)
+            queryset = queryset.filter(vehicle_class=vehicle_class)
         if seats != 'showAll':
-            queryset.filter(seats=seats)
+            queryset = queryset.filter(seats=seats)
 
         return distinct(queryset)
 
