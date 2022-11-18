@@ -12,7 +12,7 @@ SECRET_KEY = '^imyfuo7z!%$s=(jhzvzz#4o3y@p29aeqk3$+9tjmvwfet@+zq'
 DEBUG = True
 
 #ALLOWED HOSTS
-ALLOWED_HOSTS = ['broncorentals.herokuapp.com', '0.0.0.0','192.168.1.160', '127.0.0.1', '76.203.142.218', 'a6ecef2437ee.ngrok.io', 'car-rental-system.eba-3zj2ef2n.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['broncorentals.herokuapp.com', '0.0.0.0','192.168.1.160', '127.0.0.1', '76.203.142.218', 'a6ecef2437ee.ngrok.io', 'bronco-rental-system-env.eba-8cz9cwes.us-east-1.elasticbeanstalk.com']
 
 
 #INSTALLED APPS
