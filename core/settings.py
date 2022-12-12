@@ -12,7 +12,7 @@ SECRET_KEY = '^imyfuo7z!%$s=(jhzvzz#4o3y@p29aeqk3$+9tjmvwfet@+zq'
 DEBUG = True
 
 #ALLOWED HOSTS
-ALLOWED_HOSTS = ['0.0.0.0','192.168.1.160', '127.0.0.1', 'bronco-rental-system-env.eba-3s3e69px.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['0.0.0.0','192.168.1.160', '127.0.0.1', 'bronco-rental-system-env.eba-tcvb7eic.us-east-1.elasticbeanstalk.com']
 
 
 #INSTALLED APPS
@@ -107,8 +107,9 @@ USE_TZ = False
 #STATIC FILES
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static')
+    os.path.join(BASE_DIR, 'frontend/build')
 ]
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
