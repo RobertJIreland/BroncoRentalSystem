@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_filters',
-    'core'
+    'core',
     'car_rental_system',
     'api', 
 ]
