@@ -9,10 +9,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '^imyfuo7z!%$s=(jhzvzz#4o3y@p29aeqk3$+9tjmvwfet@+zq'
 
 #DEBUG - TRUE IN PRODUCTION - FALSE IN DEPLOYMENT
-DEBUG = True
+DEBUG = False
 
 #ALLOWED HOSTS
-ALLOWED_HOSTS = ['broncorentals.herokuapp.com', '0.0.0.0','192.168.1.160', '127.0.0.1', '76.203.142.218', 'a6ecef2437ee.ngrok.io', 'bronco-rental-system-env.eba-8cz9cwes.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['0.0.0.0','192.168.1.160', '127.0.0.1', 'bronco-rental-system-env.eba-ptnm67rz.us-east-1.elasticbeanstalk.com']
 
 
 #INSTALLED APPS
