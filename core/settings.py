@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
-    'whitenoise'
+    'whitenoise',
     'rest_framework',
     'corsheaders',
     'django_filters',
