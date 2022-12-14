@@ -5,43 +5,10 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 import datetime as dt
 
-def index (request):
+
+def render_react (request):
     return render(request , 'index.html')
     
-# when queryset has duplicate results, return only one of each
-# def distinct(queryset):
-#     d = {}
-#     for item in queryset:
-#         field_value = getattr(item, "vehicle_model")
-#         if field_value not in d:
-#             d[field_value] = item
-#     return d.values()
-
-
-# def date_validation(request, status_start, status_end):
-#     rental_length = status_end - status_start
-#     rental_length_days = int(rental_length.days)
-#     today = dt.date.today()
-
-#     # Ensure end date is after start date
-#     if rental_length_days < 0:
-#         raise Exception(
-#             messages.error(
-#                 request,
-#                 "End date should not be before start date.",
-#                 extra_tags="alert-danger",
-#             )
-#         )
-#     # Ensure days after and including today are chosen
-#     elif int((today - status_start.date()).days) > 0:
-#         raise Exception(
-#             messages.error(
-#                 request,
-#                 "Please choose dates in the present or future.",
-#                 extra_tags="alert-danger",
-#             )
-#         )
-
 
 def filters(request):
     # If form is filled out and submitted, reload the page with the vehicles that

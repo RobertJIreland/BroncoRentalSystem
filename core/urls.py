@@ -6,6 +6,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_views
 
+
 #URLS
 urlpatterns = [
     path('', include('car_rental_system.urls', namespace='car_rental_system')),
