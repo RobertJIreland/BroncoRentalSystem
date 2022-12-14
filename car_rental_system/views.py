@@ -1,13 +1,16 @@
 from django.shortcuts import render
+from django.views.generic.base import TemplateView
 from django.http import HttpResponse
 from .models import Vehicle, Reservations
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 import datetime as dt
 
+class ReactRender(TemplateView):
+    template_name = 'index.html'
 
-def render_react (request):
-    return render(request , 'index.html')
+# def render_react (request):
+#     return render(request , 'index.html')
     
 
 def filters(request):

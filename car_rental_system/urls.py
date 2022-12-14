@@ -5,5 +5,5 @@ from .views import *
 app_name = 'car_rental_system'
 
 urlpatterns = [
-    path('', render_react)
+    path('', ReactRender.as_view(), name='index.html')
 ]
