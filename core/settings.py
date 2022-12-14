@@ -12,7 +12,7 @@ SECRET_KEY = '^imyfuo7z!%$s=(jhzvzz#4o3y@p29aeqk3$+9tjmvwfet@+zq'
 DEBUG = True
 
 #ALLOWED HOSTS
-ALLOWED_HOSTS = ['0.0.0.0','192.168.1.160', '127.0.0.1', 'bronco-rental-system-env.eba-wyape4da.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['0.0.0.0','192.168.1.160', '127.0.0.1', 'bronco-rental-system-env.eba-pjymga2b.us-east-1.elasticbeanstalk.com']
 
 
 #INSTALLED APPS
